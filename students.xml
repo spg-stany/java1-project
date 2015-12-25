@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student login="petrov" phone="4545563">
+        <faculty>mmf0</faculty>
+        <name>Petrov</name>
+        <address>
+            <country>RUS</country>
+            <city>Moscow</city>
+            <street>moskovskaya</street>
+        </address>
+    </student>
+
+    <student login="ivanov" phone="4545566">
+        <faculty>mmf</faculty>
+        <name>Ivanov</name>
+        <address>
+            <country>RUS</country>
+            <city>Moscow</city>
+            <street>lenina</street>
+        </address>
+    </student>
+</students>
