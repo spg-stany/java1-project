@@ -33,6 +33,7 @@ Multithreading and sockets
 
 Пример кода
   
+  ```java
   private void updateData(ArrayList<String> newRows)
   {
     try
@@ -55,4 +56,6 @@ Multithreading and sockets
       e.printStackTrace();
     }
   }
+  ```
+  
 
