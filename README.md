@@ -32,13 +32,13 @@ Multithreading and sockets
 Сделать простое клиент-серверное приложение (т.е. сервер и клиент). Сервер должен быть многопоточным и обслуживать неограниченное число клиентов. Соединение должно использовать классы Socket и ServerSocket. Обмен данными должен быть организован с помощью ObjectInput(Output)Stream. Передаваемые данные – объекты собственных классов. Передача данных должна инициироваться, как клиентом, так и сервером. Т.е., например, так, как работает чат-сервер: клиент А передает данные на сервер для клиента Б, клиент Б подсоединен к серверу, но сам не делает регулярных обращений к нему, а сервер сам отправляет данные, полученные от клиента А клиенту Б.
 
 Пример кода
+  
   private void updateData(ArrayList<String> newRows)
   {
     try
     {
       if (dataRows.size() == 0)
         dataRows.add(new DataRow(newRows.remove(newRows.size() - 1)));
-
       while (newRows.size() > 0)
       {
         String rowStr = newRows.remove(newRows.size() - 1);
@@ -47,10 +47,8 @@ Multithreading and sockets
         int idxDiff = (int) Math.round((row.time - lastDataRow().time) / 10000d);
         while (idxDiff-- > 1)
           dataRows.add(new DataRow((lastDataRow().time + 10000) + ";"));
-
         dataRows.add(row);
       }
-
     }
     catch (Exception e)
     {
